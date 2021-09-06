@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='./assets/css/payment.css'
+   
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+   <title>Payment form</title>
+    
+</head>
+<body><section id='main-section' class="bg-light">
+
+    <div class="container p-4">
+        <form action="" class="form-div">
+            <div class="text-center">
+                <h1>Payment form</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+       
+                        <div id='fname_error' class='error'>Please enter your name.</div>
+                        <div>
+                            <input type='text' name='fname' id='fname' class="form-control" placeholder="Your First Name">
+                        </div>
+                    
+                </div>
+                <div class="col-lg-5 col-md-6 col-12">
+       
+                    <div id='fname_error' class='error'>Please enter your Email.</div>
+                    <div>
+                        <input type='text' name='fname' id='fname' class="form-control"
+                         placeholder="Email">
+                    </div>
+                
+            </div>
+            <div class="col-lg-5  col-12">
+       
+                <div id='fname_error' class='error'>Pincode</div>
+                <div>
+                    <input type='text' name='pincode' id='pincode' class="form-control"
+                     placeholder="pincode">
+                </div>
+            
+        </div>
+    </div>
+    <div class="col-lg-8">
+                   
+        <div id='fname_error' class='error'>Address</div>
+        <div>
+            <textarea name="address" id="address" cols="80"rows="3"></textarea>
+</div>
+</div>
+                <div class="col-lg-3  col-12">
+                   
+                        <div id='fname_error' class='error'>Gender</div>
+                        <div>
+                            <div class="input-group-text m-1">
+                                <input type="radio" name='radio' class="p-4" aria-label="Radio button for following text input">
+                           <h6 class="ml-4">Male</h6>
+                            </div>
+                              <div class="input-group-text m-1">
+                                <input type="radio" name='radio' class="p-4" aria-label="Radio button for following text input">
+                                <h6 class="ml-4">Female</h6>   </div>
+                </div>
+            </div>
+               
+              
+<hr>
+<div class='payment-card container ml-4 mr-4'>
+<div class="text-center">
+
+    <h2>Payment Information</h2>
+</div>
+    <div class="col-lg-6 col-12">
+        <div id='fname_error' class='error'>Choose Your Card Type :</div>  
+        <select name='prefix' id='prefix' class="form-control">
+            <option value="">--Select a card type</option>
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="rupay">rupay</option>
+        </select>
+    </div>
+    <div class="col-lg-5  col-12">
+       
+        <div id='fname_error' class='error'> Card Number*</div>
+        <div>
+            <input type="number" name="card_number" id="card_number" class="form-control"
+             placeholder="Card Number">
+        </div>
+    
+</div>
+<div class="col-lg-5  col-12">
+       
+    <div id='fname_error' class='error'> Expiration Date:*</div>
+    <div>
+        <input  type="date" name="exp_date" id="exp_date" class="form-control"
+         placeholder="exp_date">
+    </div>
+
+</div>
+<div class="col-lg-5  col-12">
+       
+    <div id='fname_error' class='error'>   cvv:*</div>
+    <div>
+        <input  type="number" name="cvv" id="cvv" class="form-control"
+         placeholder="CVV">
+    </div>
+</div>
+
+
+</div>
+<div class="col-lg-6 m-auto  col-12">
+    <input type='submit' class=' btn btn-primary mt-4' id='send_message' value='Pay Now' class="btn btn-line">
+</div>
+</form>
+</div>
+</section>
+
+</body>
+</html>
